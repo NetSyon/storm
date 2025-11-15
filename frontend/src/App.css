@@ -32,3 +32,22 @@
         transform: rotate(360deg);
     }
 }
+
+/* Hide "Made with Emergent" button */
+button:has(svg):has(span) {
+    display: none !important;
+}
+
+/* More specific selector for Emergent branding */
+[class*="chakra-button"],
+button[class*="css-"] {
+    display: none !important;
+}
+
+/* Show our custom buttons */
+.btn, 
+button[class*="bg-cyan"],
+button[class*="bg-red"],
+a[class*="bg-cyan"] {
+    display: inline-flex !important;
+}
