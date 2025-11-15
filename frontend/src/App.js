@@ -146,6 +146,7 @@ function App() {
           <Route path="/" element={<Portal />} />
           <Route path="/documentation" element={<Documentation />} />
           <Route path="/github" element={<GitHub />} />
+          <Route path="/wiki" element={<Wiki />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
