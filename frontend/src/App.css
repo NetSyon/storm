@@ -33,21 +33,17 @@
     }
 }
 
-/* Hide "Made with Emergent" button */
-button:has(svg):has(span) {
+/* Hide "Made with Emergent" button - positioned at bottom right */
+button[style*="position: fixed"][style*="bottom"][style*="right"],
+a[style*="position: fixed"][style*="bottom"][style*="right"],
+div[style*="position: fixed"][style*="bottom"][style*="right"] {
     display: none !important;
 }
 
-/* More specific selector for Emergent branding */
-[class*="chakra-button"],
-button[class*="css-"] {
+/* Alternative selectors for Emergent branding button */
+button:has(img[alt*="Emergent"]),
+a:has(img[alt*="Emergent"]),
+button:has(span:contains("Made with")),
+[class*="chakra-button"][class*="fixed"] {
     display: none !important;
-}
-
-/* Show our custom buttons */
-.btn, 
-button[class*="bg-cyan"],
-button[class*="bg-red"],
-a[class*="bg-cyan"] {
-    display: inline-flex !important;
 }
