@@ -128,7 +128,7 @@ const Layout = ({ children }) => {
                 <span>Microsoft 365 Security Team</span>
               </div>
               <div className="flex items-center gap-4 text-gray-400 text-sm">
-                <span>© 2025 Security Operations</span>
+                <span>© 2025 Storm Team</span>
               </div>
             </div>
           </div>
