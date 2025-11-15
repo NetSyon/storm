@@ -128,16 +128,6 @@ const Layout = ({ children }) => {
                 <span>Microsoft 365 Security Team</span>
               </div>
               <div className="flex items-center gap-4 text-gray-400 text-sm">
-                <a
-                  href="https://msportals.io"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-cyan-400 transition-colors flex items-center gap-1"
-                >
-                  <LucideIcons.ExternalLink className="w-3 h-3" />
-                  MSPortals.io
-                </a>
-                <span>|</span>
                 <span>© 2025 Security Operations</span>
               </div>
             </div>
