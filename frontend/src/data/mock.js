@@ -1151,8 +1151,14 @@ export const githubRepo = {
 
 // Team Contact Information
 export const teamContact = {
-  email: "security@company.com",
-  teams: "M365 Security Team",
-  phone: "+1 (555) 123-4567",
-  location: "Corporate Security Operations Center"
+  jiraPortal: "https://jira.company.com",
+  groupName: "M365 Security Operations Team",
+  supportedProducts: [
+    "Microsoft 365 Defender",
+    "Microsoft Entra ID",
+    "Microsoft Intune",
+    "Microsoft Purview",
+    "Azure Security",
+    "Endpoint Protection"
+  ]
 };
