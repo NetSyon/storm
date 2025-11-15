@@ -5,6 +5,7 @@ import * as LucideIcons from 'lucide-react';
 import Portal from './pages/Portal';
 import Documentation from './pages/Documentation';
 import GitHub from './pages/GitHub';
+import Wiki from './pages/Wiki';
 import Contact from './pages/Contact';
 import { Toaster } from './components/ui/sonner';
 
@@ -16,6 +17,7 @@ const Layout = ({ children }) => {
     { name: 'Portal', path: '/', icon: LucideIcons.Globe },
     { name: 'Documentation', path: '/documentation', icon: LucideIcons.BookOpen },
     { name: 'GitHub', path: '/github', icon: LucideIcons.Github },
+    { name: 'Wiki', path: '/wiki', icon: LucideIcons.BookText },
     { name: 'Contact', path: '/contact', icon: LucideIcons.Mail }
   ];
 
