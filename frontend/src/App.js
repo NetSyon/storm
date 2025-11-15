@@ -47,8 +47,8 @@ const Layout = ({ children }) => {
                   <LucideIcons.Shield className="w-6 h-6 text-cyan-400" />
                 </div>
                 <div>
-                  <h1 className="text-xl font-bold text-white">M365 Security Portal</h1>
-                  <p className="text-xs text-gray-400">Cloud Security Operations</p>
+                  <h1 className="text-xl font-bold text-white">Storm Smart Dashboard</h1>
+                  <p className="text-xs text-gray-400">M365 Security and Compliance</p>
                 </div>
               </div>
 
