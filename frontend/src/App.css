@@ -36,14 +36,30 @@
 /* Hide "Made with Emergent" button - positioned at bottom right */
 button[style*="position: fixed"][style*="bottom"][style*="right"],
 a[style*="position: fixed"][style*="bottom"][style*="right"],
-div[style*="position: fixed"][style*="bottom"][style*="right"] {
+div[style*="position: fixed"][style*="bottom"][style*="right"],
+button[style*="position:fixed"][style*="bottom"][style*="right"],
+a[style*="position:fixed"][style*="bottom"][style*="right"],
+div[style*="position:fixed"][style*="bottom"][style*="right"] {
     display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* Hide any button with specific positioning at bottom right */
+button[style*="z-index"][style*="1400"],
+button[style*="z-index"][style*="1500"],
+button[style*="z-index"][style*="9999"] {
+    display: none !important;
+    visibility: hidden !important;
 }
 
 /* Alternative selectors for Emergent branding button */
 button:has(img[alt*="Emergent"]),
 a:has(img[alt*="Emergent"]),
 button:has(span:contains("Made with")),
-[class*="chakra-button"][class*="fixed"] {
+[class*="chakra-button"][class*="fixed"],
+button[class*="chakra-button"] {
     display: none !important;
+    visibility: hidden !important;
 }
